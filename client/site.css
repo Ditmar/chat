@@ -1,0 +1,42 @@
+body{
+
+}
+.maintemplate{
+	margin: auto;
+	text-align:center;
+}
+.chatSendMessages{
+	margin: auto;
+	
+	width:60%;
+}
+.chatSendMessages input{
+	width: 100%;
+	font-size:20px;
+	padding:20px;
+	border-radius:20px;
+}
+.chatSendMessages input:hover{
+		
+}
+.panelStyles{
+	margin:auto;
+	width:50%;
+	opacity:0.9;
+}
+.background{
+	background:url("/img/background.jpg");
+	min-height:400px;
+	max-height:900px;
+}
+.mainChatStyles{
+	margin: auto;
+	width:60%;
+	max-height:800px;
+	overflow:scroll;
+}
+.list-group-item{
+	margin-top:10px;
+	border-radius:10px;
+	opacity:0.9;
+}
