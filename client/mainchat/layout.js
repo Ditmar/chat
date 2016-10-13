@@ -1,4 +1,10 @@
 Template.layout.helpers({
+	isUserLogin(){
+		return !!Accounts.userId();
+	},
+	ready(){
+		return FlowRouter.subsReady("loadMsn")&&FlowRouter.subsReady("loadUsers");
+	},
 	msnList(){
 		return MESSAGES.find({});
 	},
