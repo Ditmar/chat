@@ -7,4 +7,10 @@ Meteor.startup(() => {
 	Meteor.publish("getUsers",function(){
 		return Meteor.users.find();
 	});
+	Meteor.publish("getArticles",function(id){
+		return ARTICLE.find({user:id});
+	});
+	Meteor.publish("getComments",function(idArticle){
+		return COMMENT.find({idMsn:idArticle});
+	})
 });
