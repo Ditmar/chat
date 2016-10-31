@@ -13,4 +13,9 @@ Meteor.startup(() => {
 	Meteor.publish("getComments",function(idArticle){
 		return COMMENT.find({idMsn:idArticle});
 	})
+	Meteor.methods({
+		"Insetar":function(obj){
+			ARTICLE.insert(obj)
+		}
+	});
 });

@@ -19,6 +19,11 @@ Template.mainWallLoadMsn.helpers({
 Template.ArticlesView.events({
 	"click #comentBtn":function(e){
 		//e.preventDefault();
+		Meteor.call("Insert",obj,function(r){
+		 if(r){
+		 	alert("OK!");
+		 }
+		});
 		comments.set(true);
 	}
 });
